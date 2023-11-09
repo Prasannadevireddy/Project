@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg Form</title>
+</head>
+<style>
+    body{
+       background: url("./bg.jpg");
+       background-repeat: repeat;
+       background-size: cover;
+       background-attachment: scroll;
+    }
+    .container{
+           height:500px;
+           width: 400px;
+           margin-left: 500px;
+           margin-right: 500 px;
+           margin-top: 50px;    
+           background-color:transparent;
+    }
+    .container dl{
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        .container dt{
+            margin-top: 50px;
+            font-size: 20px;
+        }
+        .container dd{
+            margin-top: 10px;
+        }
+        #for{
+            height: 30px;
+            width: 250px;
+            border: none;
+            border-radius: 5px;
+        }
+        #two{
+            margin-left: 90px;
+            cursor: pointer;
+        }
+        button{
+            margin-top: 30px;
+            height: 40px;
+            width: 280px;
+            border:none;
+            border-radius: 20px;
+            margin-left: 40px;
+            background-color:green;
+            color: white;
+            font-style: normal;
+            font-size: 20px;
+            cursor: pointer;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        }
+        .van{
+            font-family:italic;
+            font-size: 20px;
+        }
+</style>
+<body>
+    <h1 align="center"><marquee>REGISTER HERE</marquee></h1> 
+    <div class="container">
+        <dl>
+            <dt>FullName:</dt>
+            <dd><input id="for" type="text" placeholder="Enter your name"></dd>
+            <dt>LastName:</dt>
+            <dd><input id="for" type="text" placeholder="Enter your Lastname"></dd>
+            <dt>EMail:</dt>
+            <dd><input  id="for" type="email" placeholder="✉ Enter your Mail"></dd>
+            <dt>Password:</dt>
+            <dd><input type="password" id="for" placeholder="Enter your password"></dd>
+            <dt>Confirm Password:</dt>
+            <dd><input type="password" id="for" placeholder="Confirm your password"></dd>
+            <dt>Mobile No:</dt>
+            <dd><input type="tel" id="for" placeholder="☎ Phone number"></dd>
+            <dt>Aadhar No:</dt>
+            <dd><input type="number" id="for" placeholder="Enter your Aadhar"></dd>
+            <dt>Address:</dt>
+            <dd><textarea  id="for" cols="30" rows="10" placeholder="Enter your address here"></textarea></dd>
+            <dt>Date of Birth:</dt>
+            <dd><input type="date" id="for"></dd>
+            <dt>Gender:</dt>
+            <dd><input type="text" id="for" placeholder="Enter if male(m) female(f)"></dd>
+            <dt>Destination:</dt>
+            <dd><input type="text" id="for" placeholder="Enter your destination"></dd>
+            <form>
+                <dt><label for="vani">Select Mode:</label><br></dt>
+                <dd><select name="vani" id="for">
+                    <option id="for">☑ Select the mode of travel</option>
+                    <option value="v1" id="for">Camping Car</option>
+                    <option value="v2" id="for">Car</option>
+                    <option value="v3" id="for">Mini Bus</option>
+                    <option value="v4" id="for">Flight</option>
+                </select></dd>
+            </form>
+            <button>REGISTER</button>
+        </dl>
+    </div>
+</body>
+</html>
